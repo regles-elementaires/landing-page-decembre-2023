@@ -1,0 +1,106 @@
+/** FONTS **/
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.font-open {
+  font-family: 'Open Sans', 'DM Sans', sans-serif;
+}
+
+/** COLORS **/
+
+.text-red {
+  color: #E9364B;
+}
+
+.bg-red {
+  background-color: #E9364B;
+}
+
+.border-red {
+  border: 1px solid #E9364B;
+}
+
+.text-pink {
+  color :rgba(233, 54, 75, 0.5);
+}
+
+.bg-pink {
+  background-color: rgba(233, 54, 75, 0.1);
+}
+
+/** GENERAL **/
+
+.w-full {
+  width: 100%;
+}
+
+.mx-6 {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.banner {
+  height: 75px;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.my-rounded {
+  border-radius: 20px;
+}
+
+.pill-button {
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-26 {
+    font-size: 26px;
+  }
+
+  .video-container {
+    position: relative;
+    padding-top: 46.87%;
+    width: 83.33%;
+  }
+
+  .pill-button {
+    padding: .6rem 2.2rem;
+  }
+
+  header {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fs-16 {
+    font-size: 14px;
+  }
+
+  .fs-26 {
+    font-size: 20px;
+  }
+
+  .video-container {
+    position:relative;
+    padding-top:56.25%;
+    width:100%;
+  }
+
+  .pill-button {
+    padding: .5rem 1.2rem;
+  }
+}
