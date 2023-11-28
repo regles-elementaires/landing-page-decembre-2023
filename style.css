@@ -19,7 +19,11 @@ body {
 }
 
 .border-red {
-  border: 1px solid #E9364B;
+  border: 2px solid #E9364B;
+}
+
+.border-white {
+  border: 2px solid white;
 }
 
 .text-pink {
@@ -43,14 +47,50 @@ body {
 
 .banner {
   height: 75px;
+  z-index: 4;
+}
+
+.header {
+  height: 100vh;
+}
+
+#slideshow img {
+  position: absolute;
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+}
+
+#slideshow img:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 2;
+}
+#slideshow img:nth-of-type(2) {
+  z-index: 1;
+}
+#slideshow img:nth-of-type(n+3) {
+  display: none;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
 }
 
 .title {
   font-weight: 800;
+  font-family: 'Open Sans', 'DM Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 .my-rounded {
   border-radius: 20px;
+}
+
+.my-rounded-bottom {
+  border-radius: 0 0 20px 20px;
 }
 
 .pill-button {
@@ -59,8 +99,73 @@ body {
   text-decoration: none;
 }
 
+.card-shadow {
+  box-shadow: 0px 4px 16.100000381469727px 0px rgba(0, 0, 0, 0.25);
+}
+
+.popular {
+  position: relative;
+}
+
+.popular::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  background-image: url(./img/triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.popular::after {
+  content: "Montant pl\0000E9biscit\0000E9  par nos donateur·ices";
+  position: absolute;
+  top: -52px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  color: #E9364B;
+  line-height: 1.1em;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.youtube-video-mobile {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+}
+
+.my-accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 1rem;
+  color: #E9364B;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: 'Open Sans', 'DM Sans', sans-serif;
+  text-align: left;
+  background-color: white;
+  border: 0;
+  overflow-anchor: none;
+}
 
 @media (min-width: 768px) {
+  .fs-14 {
+    font-size: 14px;
+  }
 
   .fs-16 {
     font-size: 16px;
@@ -70,10 +175,12 @@ body {
     font-size: 26px;
   }
 
-  .video-container {
-    position: relative;
-    padding-top: 46.87%;
-    width: 83.33%;
+  .fs-36 {
+    font-size: 36px;
+  }
+
+  .fs-40 {
+    font-size: 40px;
   }
 
   .pill-button {
@@ -83,9 +190,23 @@ body {
   header {
     padding-top: 75px;
   }
+
+  .circle {
+    width: 225px;
+    height: 225px;
+  }
+
+  .equal {
+    height: 225px;
+    width: 75px;
+  }
 }
 
 @media (max-width: 768px) {
+  .fs-14 {
+    font-size: 12px;
+  }
+  
   .fs-16 {
     font-size: 14px;
   }
@@ -94,13 +215,25 @@ body {
     font-size: 20px;
   }
 
-  .video-container {
-    position:relative;
-    padding-top:56.25%;
-    width:100%;
+  .fs-36 {
+    font-size: 30px;
+  }
+
+  .fs-40 {
+    font-size: 34px;
   }
 
   .pill-button {
     padding: .5rem 1.2rem;
+  }
+
+  .circle {
+    width: 125px;
+    height: 125px;
+  }
+
+  .equal {
+    height: 125px;
+    width: 50px;
   }
 }

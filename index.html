@@ -24,9 +24,15 @@
         <a class="bg-white pill-button text-red" href="" target="_blank">Je fais un don</a>
       </div>
     </div>
-    
-    <header class="bg-secondary d-flex justify-content-center">
-      <div class="col-10 my-5">
+
+    <div id="slideshow">
+      <img src="./img/bg.png">
+      <img src="./img/bg2.png">
+      <img src="./img/bg3.png">
+    </div>
+
+    <header class="position-relative header z-3 d-flex justify-content-center pb-5">
+      <div class="col-10 my-5 pb-5">
         <div class="row">
           <div class="col-6 col-md-3">
             <a href="https://www.regleselementaires.com/">
@@ -35,9 +41,9 @@
           </div>        
         </div>
         <div class="row d-flex justify-content-center mt-5">
-          <div class="col-md-6 text-center">
-            <h1 class="title font-open text-uppercase text-white bg-red d-inline-block">Pour changer les règles,</h1>
-            <h1 class="title font-open text-uppercase text-white bg-red d-inline-block">nous avons besoin de vous</h1>
+          <div class="col-md-6 text-center mt-5">
+            <h1 class="title text-white bg-red d-inline-block">Pour changer les règles,</h1>
+            <h1 class="title text-white bg-red d-inline-block">nous avons besoin de vous</h1>
           </div>          
         </div>
         <div class="row d-flex justify-content-center mt-3">
@@ -50,47 +56,299 @@
             <a class="bg-red pill-button text-white fw-bold fs-26" href="" target="_blank">Je fais un don</a>
           </div>          
         </div>
-      </div>
-      
-
+      </div>    
     </header>
 
-    <div class="swiffy-slider slider-nav-touch slider-nav-noloop slider-nav-autohide slider-indicators-sm slider-indicators-round slider-indicators-highlight">
-      <ul class="slider-container">
-          <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
-          <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
-          <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
-      </ul>
-  
-      <button type="button" class="slider-nav"></button>
-      <button type="button" class="slider-nav slider-nav-next"></button>
+    <div class="bg-white d-flex justify-content-center py-5">
+      <div class="col-10">
+        <div class="row text-center">
+          <h2 class="text-red title">Un titre ici</h2>
+        </div>
 
-      <div class="slider-indicators">
-        <button class="active"></button>
-        <button></button>
-        <button></button>
+        <!-- DESKTOP -->
+        <div class="d-none d-md-flex row mt-5 pt-3">
+          <div class="col-md-3">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+              <div class="d-flex flex-column align-items-center px-4 mt-4">
+                <img src="./img/serviette.svg" alt="serviette jetable">
+                <h3 class="fs-40 title my-2">50€</h3>
+                <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+              </div>    
+              <a class="text-decoration-none" href="">
+                <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+              </a>             
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+              <div class="d-flex flex-column align-items-center px-4 mt-4">
+                <img src="./img/visage.svg" alt="dessin d'un visage">
+                <h3 class="fs-40 title my-2">75€</h3>
+                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+              </div>    
+              <a class="text-decoration-none" href="">
+                <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+              </a>             
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red border-red popular">
+              <div class="d-flex flex-column align-items-center px-4 mt-4">
+                <img src="./img/cup.svg" alt="serviette jetable et cup">
+                <h3 class="fs-40 title my-2">160€</h3>
+                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+              </div>    
+              <a class="text-decoration-none" href="">
+                <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+              </a>             
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+              <div class="d-flex flex-column align-items-center px-4 mt-4">
+                <img src="./img/fourniture.svg" alt="des fournitures et un tampon">
+                <h3 class="fs-40 title my-2">500€</h3>
+                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+              </div>    
+              <a class="text-decoration-none my-rounded-bottom" href="">
+                <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+              </a>             
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDER MOBILE -->
+        <div class="d-md-none swiffy-slider slider-nav-touch slider-nav-noloop slider-nav-autohide slider-nav-dark slider-indicators-sm slider-indicators-round slider-indicators-highlight slider-indicators-outside slider-indicators-dark">
+          <ul class="slider-container">
+            <li>
+              <div class="d-flex flex-column mx-1 my-rounded text-red">
+                <div class="d-flex flex-column align-items-center px-4 mt-4">
+                  <img src="./img/serviette.svg" alt="serviette jetable">
+                  <h3 class="fs-40 title my-2">50€</h3>
+                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                </div>    
+                <a class="text-decoration-none" href="">
+                  <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+                </a>             
+              </div>              
+            </li>
+            <li>
+              <div class="d-flex flex-column mx-1 my-rounded text-red">
+                <div class="d-flex flex-column align-items-center px-4 mt-4">
+                  <img src="./img/serviette.svg" alt="serviette jetable">
+                  <h3 class="fs-40 title my-2">50€</h3>
+                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                </div>    
+                <a class="text-decoration-none" href="">
+                  <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+                </a>             
+              </div>              
+            </li>
+            <li>
+              <div class="d-flex flex-column mx-1 my-rounded text-red">
+                <div class="d-flex flex-column align-items-center px-4 mt-4">
+                  <img src="./img/serviette.svg" alt="serviette jetable">
+                  <h3 class="fs-40 title my-2">50€</h3>
+                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                </div>    
+                <a class="text-decoration-none" href="">
+                  <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+                </a>             
+              </div>              
+            </li>
+            <li>
+              <div class="d-flex flex-column mx-1 my-rounded text-red">
+                <div class="d-flex flex-column align-items-center px-4 mt-4">
+                  <img src="./img/serviette.svg" alt="serviette jetable">
+                  <h3 class="fs-40 title my-2">50€</h3>
+                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
+                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                </div>    
+                <a class="text-decoration-none" href="">
+                  <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
+                </a>             
+              </div>              
+            </li>
+          </ul>
+      
+          <button type="button" class="slider-nav"></button>
+          <button type="button" class="slider-nav slider-nav-next"></button>
+    
+          <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+        </div>
       </div>
     </div>
-      
 
-    <div class="text-center my-5">
-      <a class="bg-red pill-button text-white" href="https://regleselementaires.don-en-ligne.com/b?cid=3&lang=fr_FR&frequency=once&amount=2500" target="_blank">Je fais un don</a>
+    <div class="bg-red d-flex text-white justify-content-center py-5">
+      <div class="col-10 px-1 d-flex flex-wrap">
+        <div class="col-md-5">
+          <h2 class="title fs-36">Votre don peut faire baisser votre impôt !<br/>Réduisez de 66% le montant de votre don.</h2>
+          <p class="fw-bold">Avant le 31 décembre, faites un don et profitez de la réduction d'impôt. En tant qu'organisme d'intérêt général, un don à l'asso Règles Élémentaires ouvre le droit à une réduction d'impôt de 66% dans la limite de vos revenus imposables.</p>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="row d-flex">
+            <div class="circle border-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+              <div class="fs-26 font-open text-uppercase fw-light text-center">Un don de</div>
+              <div class="title fs-36">100€</div>             
+            </div>
+            <div class="equal title fs-36 d-flex align-items-center justify-content-center">=</div>
+            <div class="circle bg-white text-red rounded-circle d-flex flex-column align-items-center justify-content-center">
+              <div class="fs-26 font-open text-uppercase fw-light text-center">Coût réel</div>
+              <div class="title fs-36">36€</div>  
+            </div>
+          </div>
+          <div class="row col-md-10 d-flex justify-content-center mt-3 mb-md-5">
+            <div class="col-md-6 text-center">
+              <a class="bg-white pill-button text-red fw-bold fs-16" href="" target="_blank">Je fais un don</a>
+            </div>          
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container text-center fs-5">
-
-      <div class="text-purple font-chango text-center text-uppercase mt-5">
-        <span class="fs-40">Le constat</span>
-      </div>    
-
-      <div class="text-purple text-center mb-5">
-        <span class="fw-medium fs-24">L'enquête Règles Élémentaires X Opinion Way avril 2023<br/>“Les règles à l'école”</span>
-      </div> 
-
+    <div class="bg-white d-flex justify-content-center py-5">
+      <div class="col-10">
+        <div class="row text-center d-flex flex-column align-items-center">
+          <h2 class="text-red title">Vidéo de présentation</h2>
+          <p class="text-red fw-bold">Découvrez concrètement comment on change les règles !</p>
+          <div class="col-md-6 mt-4">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/hcsm0CIMewk?si=NfA17JMcc_kJbsJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="bg-pink d-flex justify-content-center py-5">
+      <div class="col-10">
+        <div class="row">
+          <h2 class="text-red title">Vos dons financent...</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item p-4">
+                <h2 class="accordion-header px-2">
+                  <button class="my-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    La lutte contre la précarité menstruelle
+                  </button>
+                </h2>
+                <div id="collapseOne" class="collapseOne accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-red fw-bold p-2 mt-3">
+                    Depuis 2015, nous avons redistribué plus de 15 000 000 protections périodiques à plus de 900 structures (associations, structures médico-sociales…). Ce lien que nous avons développé depuis plusieurs années avec nos associations partenaires est essentiel, il nous permet d’adresser le problème de la précarité menstruelle à travers des structures différentes et sur tout le territoire.
+                    <div class="d-md-none mt-4">
+                      <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-4">
+                <h2 class="accordion-header px-2">
+                  <button class="my-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    La sensibilisation
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="collapseTwo accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-red fw-bold p-2 mt-3">
+                    Parce que la précarité menstruelle découle directement du tabou des règles, nous agissons auprès des jeunes pour que les règles ne soient plus jamais une source de discriminations. Découvrez le témoignage de Nina, sensibilisée au collège grâce à Règles Élémentaires.
+                    <div class="d-md-none mt-4">
+                      <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/hoQtgoIDAMM?si=OMx2F8gOBlsz1cOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-4">
+                <h2 class="accordion-header px-2">
+                  <button class="my-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Le plaidoyer
+                  </button>
+                </h2>
+                <div id="collapseThree" class="collapseThree accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-red fw-bold p-2 mt-3">
+                    Pour changer durablement les règles, il faut changer les lois ! Composition des protections périodiques, remboursement des protections pour les moins de 25 ans, éducation menstruelle généralisée… Nous agissons pour que les règles entrent dans les débats politiques.
+                    <div class="d-md-none mt-4">
+                      <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7 d-none d-md-block">
+            <div class="collapseOne collapse show external-collapse">
+              <div class="accordion-body">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="collapseTwo collapse external-collapse">
+              <div class="accordion-body">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/hoQtgoIDAMM?si=OMx2F8gOBlsz1cOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="collapseThree collapse external-collapse">
+              <div class="accordion-body ">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-white d-flex justify-content-center py-5">
+      <div class="col-10">
+        
+      </div>
+    </div>
+
+    <div class="bg-red">
+
+    </div>    
 
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
       
+
+    <script>
+      const accordionButtons = document.querySelectorAll('.my-accordion-button')
+      const externalCollapses = document.querySelectorAll('.external-collapse')
+
+      accordionButtons.forEach((button) => {
+        button.addEventListener('click', function (e) {
+          externalCollapses.forEach((external) => {
+            external.classList.remove("show");
+          });
+        });
+      });
+
+
+      
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+    // Please acknowledge use of this code by including this header.
+
+    var stage = document.getElementById("slideshow");
+    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
+    var arr = stage.getElementsByTagName("img");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
+    </script>
   </body>
 </html>
