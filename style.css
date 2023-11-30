@@ -50,27 +50,36 @@ body {
   z-index: 4;
 }
 
-.header {
-  height: 100vh;
+#bg1 {
+  background-image: url("./img/bg.png");
 }
 
-#slideshow img {
+#bg2 {
+  background-image: url("./img/bg2.png");
+}
+
+#bg3 {
+  background-image: url("./img/bg3.png");
+}
+
+#slideshow div {
   position: absolute;
-  background: #fff;
   height: 100vh;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-#slideshow img:nth-of-type(1) {
+#slideshow div:nth-of-type(1) {
   animation-name: fader;
   animation-delay: 4s;
   animation-duration: 1s;
   z-index: 2;
 }
-#slideshow img:nth-of-type(2) {
+#slideshow div:nth-of-type(2) {
   z-index: 1;
 }
-#slideshow img:nth-of-type(n+3) {
+#slideshow div:nth-of-type(n+3) {
   display: none;
 }
 
@@ -162,6 +171,10 @@ body {
   overflow-anchor: none;
 }
 
+.my-accordion-button.collapsed {
+  color: rgba(233, 54, 75, 0.4);
+}
+
 @media (min-width: 768px) {
   .fs-14 {
     font-size: 14px;
@@ -189,6 +202,11 @@ body {
 
   header {
     padding-top: 75px;
+    height: 100vh;
+  }
+
+  #slideshow div {
+    height: 100vh;
   }
 
   .circle {
@@ -199,6 +217,12 @@ body {
   .equal {
     height: 225px;
     width: 75px;
+  }
+
+  .gouttes {
+    background-image: url("./img/gouttes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -227,6 +251,14 @@ body {
     padding: .5rem 1.2rem;
   }
 
+  header {
+    height: 600px;
+  }
+
+  #slideshow div {
+    height: 600px;
+  }
+
   .circle {
     width: 125px;
     height: 125px;
@@ -235,5 +267,48 @@ body {
   .equal {
     height: 125px;
     width: 50px;
+  }
+}
+
+.slides span {
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.slide-a {
+  animation: slideIn 8s forwards ease infinite;
+}
+.slide-b {
+  /* Start with 4 seconds delay */
+  animation: slideIn 8s 4s forwards ease infinite;
+}
+
+
+@keyframes slideIn {
+  0% {
+      transform: translate3d(0, 50%, 0);
+      opacity: 0;
+  }
+  5% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+  }
+  45% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+  }
+  50% {
+      transform: translate3d(0, -50%, 0);
+      opacity: 0;
+  }
+  50.03% {
+      transform: translate3d(0, 50%, 0);
+      opacity: 0;
+  }
+  100% {
+      transform: translate3d(0, 50%, 0);
+      opacity: 0;
   }
 }

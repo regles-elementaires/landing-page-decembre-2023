@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Pour changer les règles, nous avons besoin de vous">
-    <title>Je change les règles</title>
+    <title>#cestpasduluxe</title>
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./dist/css/swiffy-slider.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -19,19 +19,24 @@
   <body class="fs-16">
 
     <div class="position-fixed banner w-full bg-red text-white d-none d-md-flex align-items-center fw-bold">
-      <div class="col-10 offset-1 d-flex justify-content-between align-items-center">
-        <span>Grâce à vos dons, déjà xxx protections redistribuées à des femmes en situation de précarité menstruelle</span>
-        <a class="bg-white pill-button text-red" href="" target="_blank">Je fais un don</a>
+      <div class="col-10 offset-1 d-flex align-items-center">
+        <div class="col-md-9 slides d-flex align-items-center"> 
+          <span class="slide-a">Grâce à vos dons, déjà plus de 18 millions de protections redistribuées à des femmes en situation de précarité menstruelle</span>
+          <span class="slide-b">Grâce à vos dons, déjà plus de 6 000 jeunes sensibilisé·es</span>
+        </div>   
+        <div class="col-md-3 ms-4">
+          <a class="bg-white pill-button text-red text-center" href="" target="_blank">Je fais un don</a>
+        </div>       
       </div>
     </div>
 
     <div id="slideshow">
-      <img src="./img/bg.png">
-      <img src="./img/bg2.png">
-      <img src="./img/bg3.png">
+      <div id="bg1"></div>
+      <div id="bg2"></div>
+      <div id="bg3"></div>
     </div>
 
-    <header class="position-relative header z-3 d-flex justify-content-center pb-5">
+    <header class="position-relative z-3 d-flex justify-content-center pb-5">
       <div class="col-10 my-5 pb-5">
         <div class="row">
           <div class="col-6 col-md-3">
@@ -41,18 +46,21 @@
           </div>        
         </div>
         <div class="row d-flex justify-content-center mt-5">
-          <div class="text-center mt-5">
+          <div class="text-center">
             <h1 class="title text-white bg-red d-inline-block">Pour changer les règles,</h1>
             <br/>
             <h1 class="title text-white bg-red d-inline-block">nous avons besoin de vous</h1>
           </div>          
         </div>
         <div class="row d-flex justify-content-center mt-3">
-          <div class="col-md-6 text-center text-white">
-            <p class="px-md-5 fw-bold">Lutte contre la précarité menstruelle et sensibilisation dès le plus jeune âge, notre action est globale pour enrayer les discriminations liées aux règles</p>
+          <div class="col-md-6 text-white d-flex flex-column align-items-center justify-content-center">
+            <p class="px-md-5 fw-bold text-center">Lutte contre la précarité menstruelle et sensibilisation dès le plus jeune âge, notre action est globale pour enrayer les discriminations liées aux règles. Avoir accès à des protections et de l’information pour mieux comprendre son corps</p>
+            <div class="col-6 col-md-4">
+              <img class="w-100" src="./img/cestpasduluxe.png" alt="#cestpasduluxe">
+            </div>            
           </div>          
         </div>
-        <div class="row d-flex justify-content-center mt-3 mb-md-5">
+        <div class="row d-flex justify-content-center mt-5 mb-md-5">
           <div class="col-md-6 text-center">
             <a class="bg-red pill-button text-white fw-bold fs-26" href="" target="_blank">Je fais un don</a>
           </div>          
@@ -63,11 +71,11 @@
     <div class="bg-white d-flex justify-content-center py-5">
       <div class="col-10">
         <div class="row text-center">
-          <h2 class="text-red title">Un titre ici</h2>
+          <h2 class="text-red title">Vous pouvez agir pour #changerlesregles</h2>
         </div>
 
         <!-- DESKTOP -->
-        <div class="d-none d-md-flex row mt-5 pt-3">
+        <div class="d-none d-md-flex row mt-5 pt-4">
           <div class="col-md-3">
             <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
               <div class="d-flex flex-column align-items-center px-4 mt-4">
@@ -222,9 +230,8 @@
     <div class="bg-white d-flex justify-content-center py-5">
       <div class="col-10">
         <div class="row text-center d-flex flex-column align-items-center">
-          <h2 class="text-red title">Vidéo de présentation</h2>
-          <p class="text-red fw-bold">Découvrez concrètement comment on change les règles !</p>
-          <div class="col-md-6 mt-4">
+          <h2 class="text-red title">Découvrez concrètement comment on change les règles !</h2>
+          <div class="col-md-6 mt-5">
             <iframe class="youtube-video" src="https://www.youtube.com/embed/hcsm0CIMewk?si=NfA17JMcc_kJbsJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
@@ -310,20 +317,55 @@
 
 
     <div class="bg-white d-flex justify-content-center py-5">
-      <div class="col-10">
-        
+      <div class="col-10 d-flex flex-wrap">
+        <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0 gouttes">
+          <h2 class="text-red title">Ils et elles s’engagent pour changer les règles</h2>
+        </div>
+        <div class="col-md-6 d-flex flex-wrap">
+          <div class="col-md-6 px-2 py-2 py-md-0">
+            <iframe class="youtube-video-mobile my-rounded" src="https://www.youtube.com/embed/2G75LcoL9qA?si=VyC-hODLfVIQdGmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="col-md-6 px-2 py-2 py-md-0">
+            <iframe class="youtube-video-mobile my-rounded" src="https://www.youtube.com/embed/2G75LcoL9qA?si=VyC-hODLfVIQdGmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-5">
+          <div class="col-md-6 text-center">
+            <a class="bg-red pill-button text-white fw-bold fs-26" href="" target="_blank">Je fais un don</a>
+          </div>          
+        </div>
       </div>
+      
     </div>
 
-    <div class="bg-red">
-
+    <div class="bg-red d-flex justify-content-center py-4">
+      <div class="col-6 col-md-2">
+        <a href="https://www.regleselementaires.com/">
+          <img src="./img/logo-re-blanc.png" class="img-fluid" alt="logo Règles Élémentaires">
+        </a>
+      </div>
     </div>    
 
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-      
+    <script src="./dist/js/swiffy-slider.min.js"></script>      
 
-    <script>
+    <script>      
+      // header slideshow
+      window.addEventListener("DOMContentLoaded", function(e) {
+
+        // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+        // Please acknowledge use of this code by including this header.
+
+        var slideshow = document.getElementById("slideshow");
+        var fadeComplete = function(e) { slideshow.appendChild(arr[0]); };
+        var arr = slideshow.getElementsByTagName("div");
+        for(var i=0; i < arr.length; i++) {
+          arr[i].addEventListener("animationend", fadeComplete, false);
+        }
+
+      }, false);
+
+      // accordion component
       const accordionButtons = document.querySelectorAll('.my-accordion-button')
       const externalCollapses = document.querySelectorAll('.external-collapse')
 
@@ -334,22 +376,7 @@
           });
         });
       });
-
-
       
-  window.addEventListener("DOMContentLoaded", function(e) {
-
-    // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
-    // Please acknowledge use of this code by including this header.
-
-    var stage = document.getElementById("slideshow");
-    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-    var arr = stage.getElementsByTagName("img");
-    for(var i=0; i < arr.length; i++) {
-      arr[i].addEventListener("animationend", fadeComplete, false);
-    }
-
-  }, false);
     </script>
   </body>
 </html>
