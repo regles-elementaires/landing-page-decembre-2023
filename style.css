@@ -40,6 +40,14 @@ body {
   width: 100%;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-80 {
+  height: 80px;
+}
+
 .mx-6 {
   margin-right: 5rem;
   margin-left: 5rem;
@@ -99,13 +107,18 @@ body {
 }
 
 .my-rounded-bottom {
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 16px 16px;
 }
 
 .pill-button {
   display: inline-block;
   border-radius: 100px;
   text-decoration: none;
+}
+
+.hover-button:hover {
+  color: #E9364B !important;
+  background-color: white;
 }
 
 .card-shadow {
@@ -223,6 +236,7 @@ body {
     background-image: url("./img/gouttes.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   }
 }
 

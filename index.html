@@ -12,7 +12,19 @@
     <link href="style.css" rel="stylesheet">
 
     <!-- Matomo -->
-    
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//matomo.regleselementaires.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '4']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
     <!-- End Matomo Code -->
 
   </head>
@@ -21,11 +33,11 @@
     <div class="position-fixed banner w-full bg-red text-white d-none d-md-flex align-items-center fw-bold">
       <div class="col-10 offset-1 d-flex align-items-center">
         <div class="col-md-9 slides d-flex align-items-center"> 
-          <span class="slide-a">Grâce à vos dons, déjà plus de 18 millions de protections redistribuées à des femmes en situation de précarité menstruelle</span>
+          <span class="slide-a">Grâce à vos dons, déjà plus de 18 millions de protections redistribuées</span>
           <span class="slide-b">Grâce à vos dons, déjà plus de 6 000 jeunes sensibilisé·es</span>
         </div>   
         <div class="col-md-3 ms-4">
-          <a class="bg-white pill-button text-red text-center" href="" target="_blank">Je fais un don</a>
+          <a class="bg-white pill-button text-red text-center" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=16000" target="_blank">Je fais un don</a>
         </div>       
       </div>
     </div>
@@ -41,7 +53,7 @@
         <div class="row">
           <div class="col-6 col-md-3">
             <a href="https://www.regleselementaires.com/">
-              <img src="./img/logo-re-blanc.png" class="img-fluid" alt="logo Règles Élémentaires">
+              <img src="./img/logo-re-blanc.svg" class="img-fluid" alt="logo Règles Élémentaires">
             </a>
           </div>        
         </div>
@@ -54,15 +66,15 @@
         </div>
         <div class="row d-flex justify-content-center mt-3">
           <div class="col-md-6 text-white d-flex flex-column align-items-center justify-content-center">
-            <p class="px-md-5 fw-bold text-center">Lutte contre la précarité menstruelle et sensibilisation dès le plus jeune âge, notre action est globale pour enrayer les discriminations liées aux règles. Avoir accès à des protections et de l’information pour mieux comprendre son corps</p>
+            <p class="px-md-5 mb-1 fw-bold text-center">Lutte contre la précarité menstruelle et sensibilisation dès le plus jeune âge, notre action est globale pour enrayer les discriminations liées aux règles.<br/>Avoir accès à des protections et de l’information pour mieux comprendre son corps</p>
             <div class="col-6 col-md-4">
-              <img class="w-100" src="./img/cestpasduluxe.png" alt="#cestpasduluxe">
+              <img class="w-full" src="./img/cestpasduluxe.svg" alt="#cestpasduluxe">
             </div>            
           </div>          
         </div>
-        <div class="row d-flex justify-content-center mt-5 mb-md-5">
+        <div class="row d-flex justify-content-center mt-4 mb-md-5">
           <div class="col-md-6 text-center">
-            <a class="bg-red pill-button text-white fw-bold fs-26" href="" target="_blank">Je fais un don</a>
+            <a class="bg-red pill-button hover-button text-white fw-bold fs-26" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=16000" target="_blank">Je fais un don</a>
           </div>          
         </div>
       </div>    
@@ -75,55 +87,55 @@
         </div>
 
         <!-- DESKTOP -->
-        <div class="d-none d-md-flex row mt-5 pt-4">
+        <div class="d-none d-md-flex row mt-5 pt-4 flex-row flex-wrap align-items-stretch">
           <div class="col-md-3">
-            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red justify-content-between h-full">
               <div class="d-flex flex-column align-items-center px-4 mt-4">
-                <img src="./img/serviette.svg" alt="serviette jetable">
+                <img class="h-80" src="./img/culotte.svg" alt="culotte menstruelle">
                 <h3 class="fs-40 title my-2">50€</h3>
                 <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                <p class="fs-14 text-center">*soit 17€ après réduction fiscale</p>
               </div>    
-              <a class="text-decoration-none" href="">
+              <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=5000" target="_blank">
                 <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
               </a>             
             </div>
           </div>
           <div class="col-md-3">
-            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red justify-content-between h-full">
               <div class="d-flex flex-column align-items-center px-4 mt-4">
-                <img src="./img/visage.svg" alt="dessin d'un visage">
+                <img class="h-80" src="./img/visage.svg" alt="dessin d'un visage">
                 <h3 class="fs-40 title my-2">75€</h3>
-                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+                <p class="fw-bold fs-14 text-center">5 jeunes filles qui n’auront plus jamais honte quand elles auront leurs règles</p>
+                <p class="fs-14 text-center">*soit 25€ après réduction fiscale</p>
               </div>    
-              <a class="text-decoration-none" href="">
+              <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=7500" target="_blank">
                 <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
               </a>             
             </div>
           </div>
           <div class="col-md-3">
-            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red border-red popular">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red border-red popular justify-content-between h-full">
               <div class="d-flex flex-column align-items-center px-4 mt-4">
-                <img src="./img/cup.svg" alt="serviette jetable et cup">
+                <img class="h-80" src="./img/cup.svg" alt="serviette jetable et cup">
                 <h3 class="fs-40 title my-2">160€</h3>
-                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+                <p class="fw-bold fs-14 text-center">30 femmes en situation de précarité menstruelle pourront bénéficier de protections périodiques pendant 1 an</p>
+                <p class="fs-14 text-center">*soit 54€ après réduction fiscale</p>
               </div>    
-              <a class="text-decoration-none" href="">
+              <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=16000" target="_blank">
                 <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
               </a>             
             </div>
           </div>
           <div class="col-md-3">
-            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red">
+            <div class="d-flex flex-column mx-1 card-shadow my-rounded text-red justify-content-between h-full">
               <div class="d-flex flex-column align-items-center px-4 mt-4">
-                <img src="./img/fourniture.svg" alt="des fournitures et un tampon">
+                <img class="h-80" src="./img/fourniture.svg" alt="des fournitures et un tampon">
                 <h3 class="fs-40 title my-2">500€</h3>
-                <p class="fw-bold fs-14 text-center">2 femmes qui sortent définitivement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                <p class="fs-14 text-center">*soit 17.50 après réduction fiscale</p>
+                <p class="fw-bold fs-14 text-center">Une classe entière sensibilisée sur les règles, un espoir pour un avenir sans tabou</p>
+                <p class="fs-14 text-center">*soit 170€ après réduction fiscale</p>
               </div>    
-              <a class="text-decoration-none my-rounded-bottom" href="">
+              <a class="text-decoration-none my-rounded-bottom" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=50000" target="_blank">
                 <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
               </a>             
             </div>
@@ -131,59 +143,59 @@
         </div>
 
         <!-- SLIDER MOBILE -->
-        <div class="d-md-none swiffy-slider slider-nav-touch slider-nav-noloop slider-nav-autohide slider-nav-dark slider-indicators-sm slider-indicators-round slider-indicators-highlight slider-indicators-outside slider-indicators-dark">
+        <div class="d-md-none mt-4 swiffy-slider slider-nav-touch slider-nav-noloop slider-nav-autohide slider-nav-dark slider-indicators-sm slider-indicators-round slider-indicators-highlight slider-indicators-outside slider-indicators-dark">
           <ul class="slider-container">
             <li>
-              <div class="d-flex flex-column mx-1 my-rounded text-red">
+              <div class="d-flex flex-column mx-1 border-red my-rounded text-red justify-content-between h-full">
                 <div class="d-flex flex-column align-items-center px-4 mt-4">
-                  <img src="./img/serviette.svg" alt="serviette jetable">
+                  <img class="h-80" src="./img/culotte.svg" alt="culotte menstruelle">
                   <h3 class="fs-40 title my-2">50€</h3>
                   <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                  <p class="fs-14 text-center">*soit 17€ après réduction fiscale</p>
                 </div>    
-                <a class="text-decoration-none" href="">
+                <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=7500" target="_blank">
                   <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
                 </a>             
               </div>              
             </li>
             <li>
-              <div class="d-flex flex-column mx-1 my-rounded text-red">
+              <div class="d-flex flex-column mx-1 border-red my-rounded text-red justify-content-between h-full">
                 <div class="d-flex flex-column align-items-center px-4 mt-4">
-                  <img src="./img/serviette.svg" alt="serviette jetable">
-                  <h3 class="fs-40 title my-2">50€</h3>
-                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                  <img class="h-80" src="./img/visage.svg" alt="dessin d'un visage">
+                  <h3 class="fs-40 title my-2">75€</h3>
+                  <p class="fw-bold fs-14 text-center">5 jeunes filles qui n’auront plus jamais honte quand elles auront leurs règles</p>
+                  <p class="fs-14 text-center">*soit 25€ après réduction fiscale</p>
                 </div>    
-                <a class="text-decoration-none" href="">
+                <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=7500" target="_blank">
                   <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
                 </a>             
               </div>              
             </li>
             <li>
-              <div class="d-flex flex-column mx-1 my-rounded text-red">
+              <div class="d-flex flex-column mx-1 border-red my-rounded text-red justify-content-between h-full">
                 <div class="d-flex flex-column align-items-center px-4 mt-4">
-                  <img src="./img/serviette.svg" alt="serviette jetable">
-                  <h3 class="fs-40 title my-2">50€</h3>
-                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                  <img class="h-80" src="./img/cup.svg" alt="serviette jetable et cup">
+                  <h3 class="fs-40 title my-2">160€</h3>
+                  <p class="fw-bold fs-14 text-center">30 femmes en situation de précarité menstruelle pourront bénéficier de protections périodiques pendant 1 an</p>
+                  <p class="fs-14 text-center">*soit 54€ après réduction fiscale</p>
                 </div>    
-                <a class="text-decoration-none" href="">
+                <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=7500" target="_blank">
                   <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
                 </a>             
               </div>              
             </li>
             <li>
-              <div class="d-flex flex-column mx-1 my-rounded text-red">
+              <div class="d-flex flex-column mx-1 border-red my-rounded text-red justify-content-between h-full">
                 <div class="d-flex flex-column align-items-center px-4 mt-4">
-                  <img src="./img/serviette.svg" alt="serviette jetable">
-                  <h3 class="fs-40 title my-2">50€</h3>
-                  <p class="fw-bold fs-14 text-center">2 femmes qui sortent durablement de la précarité menstruelle grâce à la mise à disposition de protections réutilisables</p>
-                  <p class="fs-14 text-center">*soit 17.50€ après réduction fiscale</p>
+                  <img class="h-80" src="./img/fourniture.svg" alt="des fournitures et un tampon">
+                  <h3 class="fs-40 title my-2">500€</h3>
+                  <p class="fw-bold fs-14 text-center">Une classe entière sensibilisée sur les règles, un espoir pour un avenir sans tabou</p>
+                  <p class="fs-14 text-center">*soit 170€ après réduction fiscale</p>
                 </div>    
-                <a class="text-decoration-none" href="">
+                <a class="text-decoration-none" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=7500" target="_blank">
                   <div class="bg-red text-white fs-20 fw-bold w-full text-center my-rounded-bottom py-3 mt-3">Je donne</div>
                 </a>             
-              </div>              
+              </div>             
             </li>
           </ul>
       
@@ -204,7 +216,7 @@
       <div class="col-10 px-1 d-flex flex-wrap">
         <div class="col-md-5">
           <h2 class="title fs-36">Votre don peut faire baisser votre impôt !<br/>Réduisez de 66% le montant de votre don.</h2>
-          <p class="fw-bold">Avant le 31 décembre, faites un don et profitez de la réduction d'impôt. En tant qu'organisme d'intérêt général, un don à l'asso Règles Élémentaires ouvre le droit à une réduction d'impôt de 66% dans la limite de vos revenus imposables.</p>
+          <p class="fw-bold">Avant le 31 décembre, faites un don et profitez de la réduction d'impôt. En tant qu'organisme d'intérêt général, un don à l'association Règles Élémentaires ouvre le droit à une réduction d'impôt de 66% dans la limite de vos revenus imposables.</p>
         </div>
         <div class="col-md-6 offset-md-1">
           <div class="row d-flex">
@@ -215,12 +227,12 @@
             <div class="equal title fs-36 d-flex align-items-center justify-content-center">=</div>
             <div class="circle bg-white text-red rounded-circle d-flex flex-column align-items-center justify-content-center">
               <div class="fs-26 font-open text-uppercase fw-light text-center">Coût réel</div>
-              <div class="title fs-36">36€</div>  
+              <div class="title fs-36">34€</div>  
             </div>
           </div>
-          <div class="row col-md-10 d-flex justify-content-center mt-3 mb-md-5">
+          <div class="row col-md-10 d-flex justify-content-center mt-3">
             <div class="col-md-6 text-center">
-              <a class="bg-white pill-button text-red fw-bold fs-16" href="" target="_blank">Je fais un don</a>
+              <a class="bg-white pill-button text-red fw-bold fs-16" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=16000" target="_blank">Je fais un don</a>
             </div>          
           </div>
         </div>
@@ -254,9 +266,9 @@
                 </h2>
                 <div id="collapseOne" class="collapseOne accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-red fw-bold p-2 mt-3">
-                    Depuis 2015, nous avons redistribué plus de 15 000 000 protections périodiques à plus de 900 structures (associations, structures médico-sociales…). Ce lien que nous avons développé depuis plusieurs années avec nos associations partenaires est essentiel, il nous permet d’adresser le problème de la précarité menstruelle à travers des structures différentes et sur tout le territoire.
+                    Depuis 2015, nous avons redistribué plus de 18 000 000 protections périodiques à plus de 1000 structures (associations, structures médico-sociales…). Ce lien que nous avons développé depuis plusieurs années avec nos associations partenaires est essentiel, il nous permet d’adresser le problème de la précarité menstruelle à travers des structures différentes et sur tout le territoire.
                     <div class="d-md-none mt-4">
-                      <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/lOnErMPt90E?si=65tNda-zk5hyDRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
@@ -269,7 +281,7 @@
                 </h2>
                 <div id="collapseTwo" class="collapseTwo accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-red fw-bold p-2 mt-3">
-                    Parce que la précarité menstruelle découle directement du tabou des règles, nous agissons auprès des jeunes pour que les règles ne soient plus jamais une source de discriminations. Découvrez le témoignage de Nina, sensibilisée au collège grâce à Règles Élémentaires.
+                    Parce que la précarité menstruelle découle directement du tabou des règles, nous agissons auprès des jeunes pour que les règles ne soient plus jamais une source de discriminations. Ces dernières années, nous avons pu sensibiliser plus de 6000 jeunes dans des établissements scolaires ou extra-scolaires. Découvrez le témoignage de Nina, sensibilisée au collège grâce à Règles Élémentaires.
                     <div class="d-md-none mt-4">
                       <iframe class="youtube-video-mobile" src="https://www.youtube.com/embed/hoQtgoIDAMM?si=OMx2F8gOBlsz1cOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -297,7 +309,7 @@
           <div class="col-md-7 d-none d-md-block">
             <div class="collapseOne collapse show external-collapse">
               <div class="accordion-body">
-                <iframe class="youtube-video" src="https://www.youtube.com/embed/bGLvKUM72WM?si=D2Up3Bza5lyOclTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/lOnErMPt90E?si=65tNda-zk5hyDRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
             <div class="collapseTwo collapse external-collapse">
@@ -326,12 +338,12 @@
             <iframe class="youtube-video-mobile my-rounded" src="https://www.youtube.com/embed/2G75LcoL9qA?si=VyC-hODLfVIQdGmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="col-md-6 px-2 py-2 py-md-0">
-            <iframe class="youtube-video-mobile my-rounded" src="https://www.youtube.com/embed/2G75LcoL9qA?si=VyC-hODLfVIQdGmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="youtube-video-mobile my-rounded" src="https://www.youtube.com/embed/E_BfSvIphbk?si=w5M-BRuUvr_Ryty5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center mt-5">
           <div class="col-md-6 text-center">
-            <a class="bg-red pill-button text-white fw-bold fs-26" href="" target="_blank">Je fais un don</a>
+            <a class="bg-red pill-button text-white fw-bold fs-26" href="https://regleselementaires.don-en-ligne.com/b?cid=1&lang=fr_FR&frequency=once&amount=16000" target="_blank">Je fais un don</a>
           </div>          
         </div>
       </div>
@@ -341,7 +353,7 @@
     <div class="bg-red d-flex justify-content-center py-4">
       <div class="col-6 col-md-2">
         <a href="https://www.regleselementaires.com/">
-          <img src="./img/logo-re-blanc.png" class="img-fluid" alt="logo Règles Élémentaires">
+          <img src="./img/logo-re-blanc.svg" class="img-fluid" alt="logo Règles Élémentaires">
         </a>
       </div>
     </div>    
