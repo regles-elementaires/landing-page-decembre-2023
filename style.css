@@ -290,6 +290,8 @@ body {
   }
 }
 
+/* https://stackoverflow.com/questions/66768323/vertical-text-sliding-one-phrase-after-another */
+
 .slides span {
   opacity: 0;
   margin-left: auto;
@@ -298,11 +300,15 @@ body {
 }
 
 .slide-a {
-  animation: slideIn 8s forwards ease infinite;
+  animation: slideIn 12s forwards ease infinite;
 }
 .slide-b {
   /* Start with 4 seconds delay */
-  animation: slideIn 8s 4s forwards ease infinite;
+  animation: slideIn 12s 4s forwards ease infinite;
+}
+.slide-c {
+  /* Start with 8 seconds delay */
+  animation: slideIn 12s 8s forwards ease infinite;
 }
 
 
@@ -311,19 +317,19 @@ body {
       transform: translate3d(0, 50%, 0);
       opacity: 0;
   }
-  5% {
+  6.66% {
       transform: translate3d(0, 0, 0);
       opacity: 1;
   }
-  45% {
+  26.66% {
       transform: translate3d(0, 0, 0);
       opacity: 1;
   }
-  50% {
+  33.30% {
       transform: translate3d(0, -50%, 0);
       opacity: 0;
   }
-  50.03% {
+  33.33% {
       transform: translate3d(0, 50%, 0);
       opacity: 0;
   }
